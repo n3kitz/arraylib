@@ -52,3 +52,7 @@ set_target_properties(arraylib app PROPERTIES
     LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}"
     ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}"
 )
+# ---- Пример по варианту ----
+add_executable(variant_28 examples/variant_28.cpp)
+target_link_libraries(variant_28 PRIVATE arraylib)
+
